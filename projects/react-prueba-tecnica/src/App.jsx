@@ -7,6 +7,7 @@ export function App() {
     //const CAT_ENDPOINT_IMG_URL = `https://cataas.com/cat/says/${firstWord}?fontSize=50&fontColor=red&json=true`
     const [fact,setFact] = useState()
     const [imageUrl, setImageUrl] = useState()
+    
 
     useEffect(()=>{
         //recoger por respuesta simple
@@ -17,6 +18,7 @@ export function App() {
                 setFact(fact)
             })
     },[])
+
     useEffect(()=>{
 
         if (!fact) return
